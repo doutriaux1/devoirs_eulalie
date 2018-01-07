@@ -153,7 +153,8 @@ int src1(char *s){
 	}
 }
 		
-Liste* TrouverEtiquette(FILE* f){
+Liste* TrouverEtiquette(FILE* f){ //ici je veux pouvoir prendre un fichier f en argument et retourner un pointeur vers une liste chainée des etiquettes qu'il contient genre je veux qu'il me garde en memoire ici et fin pour que quand je veux reparcourir mon fichier ligne par ligne il sache ou aller si il trouve un ici ou un fin 
+	
 	char* s;
 	int i=0,reg=0;
 	Etiquette* e=malloc(sizeof(Etiquette));
